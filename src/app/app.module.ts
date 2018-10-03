@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { UiModule } from './ui/ui.module';
+import { WebsitesModule } from './websites/websites.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { UiModule } from './ui/ui.module';
   ],
   imports: [
     BrowserModule,
-    UiModule
+    UiModule,
+    WebsitesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

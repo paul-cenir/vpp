@@ -2,16 +2,16 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LayoutComponent } from './layout/layout.component';
 import { HeaderComponent } from './header/header.component';
-import { AppComponent} from '../app.component'
+import { HomeComponent} from '../websites/home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { RouterModule, Routes } from '@angular/router';
 
 const appRoutes: Routes = [
-//   {
-//   path: '',
-//   component: AppComponent,
-//   data: { title: 'Heroes List' }
-// }
+  {
+  path: '',
+  component: HomeComponent,
+  data: { title: 'Heroes List' }
+}
  
 ];
 
