@@ -1,13 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
+
+
+
 $primary-color: #333;
 $secondary-color: #ffffff;
 
-body {
+// body {
  
-  background-color: $primary-color;
-  color:$secondary-color;
-}
+//   background-color: $primary-color;
+//   color:$secondary-color;
+// }
 
-h1,h2,h3,h4,h5,p,span,label {
-    color:$secondary-color;
-}
+// h1,h2,h3,h4,h5,p,span,label {
+//     color:$secondary-color;
+// }
