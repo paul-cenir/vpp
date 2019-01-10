@@ -4,6 +4,7 @@ import { LayoutComponent } from '../app/ui/layout/layout.component';
 import { HeaderComponent } from '../app/ui/header/header.component';
 import { HomeComponent} from '../app/websites/home/home.component';
 import { AboutComponent} from '../app/websites/about/about.component';
+import { WidgetsComponent} from '../app/websites/widgets/widgets.component';
 import { FooterComponent } from '../app/ui/footer/footer.component';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -24,6 +25,11 @@ const appRoutes: Routes = [
     path: 'home',
     component: HomeComponent,
     data: { title: 'home' }
+  },
+  {
+    path: 'widgets',
+    component: WidgetsComponent,
+    data: { title: 'widgets' }
   },
   { path: '**', component: HomeComponent }
  

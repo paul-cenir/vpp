@@ -1,0 +1,73 @@
+<div class="widget-block">
+  <h2>Carousel</h2>
+  <div class="carousel-container">
+    <ngb-carousel #carousel>
+      <ng-template ngbSlide>
+        <img src="https://lorempixel.com/900/500?r=4" alt="Random first slide">
+        <div class="carousel-caption">
+          <h3>10 seconds between slides...</h3>
+          <p>This carousel uses customized default values.</p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <img src="https://lorempixel.com/900/500?r=5"  alt="Random second slide">
+        <div class="carousel-caption">
+          <h3>No keyboard...</h3>
+          <p>This carousel uses customized default values.</p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <img src="https://lorempixel.com/900/500?r=6" alt="Random third slide">
+        <div class="carousel-caption">
+          <h3>And no wrap after last slide.</h3>
+          <p>This carousel uses customized default values.</p>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+ 
+  <button (click)="pause()">pause</button>
+</div>
+
+
+<div class="widget-block">
+  <h2>Accordion</h2>
+  <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+    <ngb-panel title="Simple">
+      <ng-template ngbPanelContent>
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+        aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+        craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+        labore sustainable VHS.
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel>
+      <ng-template ngbPanelTitle>
+        <span>&#9733; <b>Fancy</b> title &#9733;</span>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+        aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+        craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+        labore sustainable VHS.
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel title="Disabled" [disabled]="true">
+      <ng-template ngbPanelContent>
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+        aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+        craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+        labore sustainable VHS.
+      </ng-template>
+    </ngb-panel>
+  </ngb-accordion>
+</div>
+
+
+
