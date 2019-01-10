@@ -1,5 +1,6 @@
 import { Component, OnInit,ViewChild } from '@angular/core';
-import {NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
+import {NgbCarouselConfig,NgbDateStruct, NgbCalendar} from '@ng-bootstrap/ng-bootstrap';
+
 
 @Component({
   selector: 'app-widgets',
@@ -12,7 +13,10 @@ export class WidgetsComponent implements OnInit {
 
   images = [1, 2, 3].map(() => `https://picsum.photos/900/500?random&t=${Math.random()}`);
 
-  constructor(config: NgbCarouselConfig) {
+  model: NgbDateStruct;
+  date: {year: number, month: number};
+
+  constructor(  private calendar: NgbCalendar,config: NgbCarouselConfig) {
 
       // customize default values of carousels used by this component tree
       config.interval = 1000;
@@ -23,6 +27,9 @@ export class WidgetsComponent implements OnInit {
     this.carousel.pause();
   }
 
+  selectToday() {
+    this.model = this.calendar.getToday();
+  }
   ngOnInit() {
   }
 
